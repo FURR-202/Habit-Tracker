@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker - "GO TO WORK"</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container flex-center">
+        <div class="main-content">
+            <header class="flex-center">
+                <div class="user-pfp">
+                    <img src="default-pfp.jpg" alt="User Profile Picture"> 
+                </div>
+            </header>
+            <main >
+              <div class="trackHabit-box flex-center"></div> 
+              <h4>Your activity</h4>
+              <div class="task-container"></div>
+              <div class="InputTaskBox flex-center">
+                <i class="fa-solid fa-circle-xmark"></i>
+                <div class="gif-box flex-center">
+                    <img class="gif" src="gif">
+                    <img class="gif" src="gif">
+                    <img class="gif" src="gif">
+                    <img class="gif" src="gif">
+                </div>
+                <input type="text" placeholder="What you have done today..." class="task-input">
+                <span id="tooLongMsg">Too long<i class="fa-solid fa-circle-exclamation"></i></span>
+                <input type="text" placeholder="How many hours?" class="taskTime-input">
+                <textarea placeholder="Add a description..." class="taskDesc-input">
+                </textarea>
+                <span id="execeedingWordsMsg">not more than 60 words<i class="fa-solid fa-circle-exclamation"></i></span>
+                <div class="btn-box flex-center">
+                <button class="AddDescription">Add Description</button>
+                <button class="DoneBtn">Done</button>
+                </div>
+              </div>
+              <div class="addBtn flex-center"><i class="fa-solid fa-plus"></i></div>
+            </main>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

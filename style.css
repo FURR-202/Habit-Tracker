@@ -1,0 +1,307 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+.main-content{
+    height: 450px;
+    width: 700px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+header{
+   height:20%;
+   width: 100%;
+    background-color: #343a40;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+main{
+    height:80%;
+    width: 100%;
+    background-color: #1d2227;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+.user-pfp{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #1d2227 ;
+}
+.user-pfp img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+/* main content beneath the header */
+.trackHabit-box{
+    padding: 20px;
+    height: 98px;
+}
+.trackHabit{
+    height: 127px;
+    flex-direction: column;
+    animation: fadeIn 0.57s ease ;
+}
+.days{
+    height: 200px;
+    width: 200px;
+    flex-wrap: wrap;
+}
+.small-boxes{
+    height: 18px;
+    width: 18px;
+    border-radius: 5.5px;
+    background-color:  #434d56;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 3px;
+}
+.trackHabit h2{
+    font-family: "Karla", sans-serif;
+    color: aliceblue;
+    margin-bottom: 10px;
+}
+
+main i{
+    cursor: pointer;
+    color: #FFFFFF;
+    margin-top: 22px;
+   
+}
+.fa-chevron-left{
+    margin-right: 5px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}   
+
+/* task container styling */
+.task-container{
+    transition: all 0.3s ease-in-out;
+    height: 170px;
+    width: 95%;
+    overflow-y: scroll;
+    --scroll-display: none;
+    
+}
+/* scrollbar styling */
+.task-container::-webkit-scrollbar{
+    all: unset;
+    width: 8px;
+}
+.task-container::-webkit-scrollbar-thumb{
+    background-color: #adb5bd;
+    display: var(--scroll-display);
+}
+
+.task-container::-webkit-scrollbar-thumb:hover{
+    display: block;
+}
+/* your activity */
+h4{
+    font-family: "Karla", sans-serif;
+    color:aliceblue;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+/* task-boxes styling */
+.task-boxes{
+    height: 100px;
+    width: 95%;
+    margin-left: 20px;
+    transition: all 0.3s ease-in-out;
+}
+.date-box p{
+    font-family: "Karla", sans-serif;
+    color: aliceblue;
+    margin-left: 4px;
+}
+.task-boxes span{
+    height: 1.3px;
+    background-color: #434d56;
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+    
+}
+.horizontal-span{
+    width: 90%;
+    margin-left: 10px;
+}
+.vertical-span{
+    width: 50px;
+    transform: rotate(90deg);
+    margin-top: 30px;
+}
+.task{
+    font-family: "Karla", sans-serif;
+    color: #FFFFFF;
+    font-weight: 400;
+    cursor: pointer;
+    display: inline;
+}
+.task:hover{
+   color: #c1baba;
+}
+.task-desc{
+    font-family: "Karla", sans-serif;
+    color: aquamarine;
+    font-weight: 400;
+    margin-left: 50px;
+    display: none;
+    transition: all 0.2s ease-in-out;
+    flex-wrap: wrap;
+}
+.hours{
+    font-family: "Karla", sans-serif;
+    color:#adb5bd;
+    font-weight: 400;
+    text-align: right;
+}
+.addBtn{
+    height: 35px;
+    width: 40px;
+    background-color:#343a40;
+    border-radius: 10px;
+    position: absolute;
+    right:27.6%;
+    bottom: 20%;
+    z-index: 1;
+}
+.addBtn i{
+    margin: 0px;
+}
+/* designing input box */
+.InputTaskBox{
+    height: 250px;
+    width: 400px;
+    border-radius: 30px;
+    background-color:white;
+    flex-direction: column;
+    position: absolute;
+    bottom: 30%;
+    right: 36%;
+    transition: all 0.3s ease-in-out;
+    display: none;
+
+}
+.gif{
+    height: 45px;
+    width: 45px;
+}
+.InputTaskBox input{
+    all: unset;
+    height: 20px;
+    width: 300px;
+    border: 2px solid #adb5bd;
+    font-family: "Karla", sans-serif;
+    border-radius: 20px;
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+}
+.InputTaskBox input:hover{
+    border:2px solid #606b76;
+}
+.btn-box{
+    margin-top: 5px;
+}
+.btn-box button{
+    all: unset;
+    padding: 9px 15px 9px 15px;
+    font-family: "Karla", sans-serif;
+    border-radius: 10px;
+    margin-right: 20px;
+    border : 2px solid #adb5bd;
+    cursor: pointer;  
+}
+.btn-box .DoneBtn{
+    background-color:green;
+    color: #FFFFFF;
+    border: 2px solid green;
+}
+.taskDesc-input{
+    all: unset;
+    height: 50px;
+    width: 295px;
+    border: 2px solid #adb5bd;
+    font-family: "Karla", sans-serif;
+    border-radius: 10px;
+    padding: 8px;
+    margin-top: 13px;
+    display: none;
+}
+.InputTaskBox input:focus{
+    outline: none;
+    border: 2px solid black;
+}
+.taskDesc-input:focus{
+    outline: none;
+    border: 2px solid black;
+}
+.InputTaskBox .taskDesc-input:hover{
+    border:2px solid #606b76;
+}
+
+.InputTaskBox span{
+    font-family: "Karla", sans-serif;
+    color: red;
+    font-weight: 500;
+    margin-right: 140px;
+    font-size: small;
+}
+.fa-circle-exclamation{
+    font-size: small;
+    color: red;
+    margin-top: 0px;
+    margin-left: 1px;
+}
+.InputTaskBox #tooLongMsg{
+    margin-right: 230px;
+}
+.InputTaskBox span{
+   visibility: hidden;
+}
+.InputTaskBox .fa-circle-xmark{
+    color: black;
+    margin: 0px;
+    margin-left: 350px;
+    cursor: pointer;
+}
+.task-container h4{
+    text-align: center;
+    margin-top: 80px;
+    color: #adb5bd;
+}
+.task-tag{
+font-family: "Karla", sans-serif;
+background-color: black;
+padding: 4px 8px 4px 8px;
+color: #FFFFFF;
+font-size: small;
+position: absolute;
+border-radius: 17px;
+
+}
