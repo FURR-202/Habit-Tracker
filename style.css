@@ -203,7 +203,7 @@ h4{
     flex-direction: column;
     position: absolute;
     bottom: 30%;
-    right: 36%;
+    right: 35%;
     transition: all 0.3s ease-in-out;
     display: none;
 
@@ -305,3 +305,54 @@ position: absolute;
 border-radius: 17px;
 
 }
+@media (max-width: 480px) {
+ .InputTaskBox{
+    width: 287px;
+    right: 15%;
+ }
+ .gif{
+    height: 35px;
+    width: 35px;
+}
+.InputTaskBox input{
+    width: 250px;
+    padding: 10px;
+}
+.InputTaskBox #tooLongMsg{
+    margin-right: 190px;
+}
+.taskDesc-input{
+    width: 253px;
+}
+.InputTaskBox span{
+    margin-right: 100px;
+}
+.InputTaskBox .fa-circle-xmark{
+    margin-left: 250px;
+}
+}
+
+
+@media (max-width: 1100px) {
+ .InputTaskBox{
+    right: 28%;
+ }
+}
+@media (max-width: 780px) {
+ .InputTaskBox{
+    right: 20%;
+ }
+}
+@media (max-width: 680px) {
+ .InputTaskBox{
+    right: 15%;
+ }
+ 
+}
+@media (max-width: 320px) {
+ .InputTaskBox{
+    right: 7%;
+ }
+ 
+}
+
